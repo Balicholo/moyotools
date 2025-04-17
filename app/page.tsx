@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <main className="min-h-screen overflow-x-hidden">
       {/* Hero Section */}
-      <section className="relative h-screen flex flex-col items-center justify-center bg-[url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069')] bg-cover bg-center">
+      <section className="relative h-screen flex flex-col items-center justify-center bg-[url('https://i.ibb.co/Fk9fcgJH/workplace-team-cooperation-businesswoman-laptop-office.jpg')] bg-cover bg-center">
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="container mx-auto px-4 sm:px-6 text-center relative z-10 flex-1 flex flex-col items-center justify-center">
           <div>
@@ -43,6 +43,18 @@ export default function Home() {
         </div>
         <div className="relative z-10 mb-8">
           <ChevronDown className="w-8 h-8 text-white animate-bounce" />
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className="py-16 sm:py-20 bg-muted/50" id="about">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 text-gray-900">About Us</h2>
+            <p className="text-base sm:text-lg text-muted-foreground mb-4 sm:mb-6">
+              MoyoTools is a smart business solution designed to simplify how companies manage their customers, sales, and finances. Our all-in-one platform combines CRM, sales tracking, and accounting tools to help businesses stay organized, make informed decisions, and grow with confidence. Whether you're a small startup or a growing enterprise, MoyoTools is built to support your success every step of the way.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -266,7 +278,7 @@ export default function Home() {
                 placeholder="Enter your email"
                 className="flex-1 px-4 py-2 rounded-md text-foreground w-full"
               />
-              <Button variant="secondary" className="w-full sm:w-auto">Subscribe</Button>
+              <Button variant="secondary" className="w-full sm:w-auto bg-teal-700 hover:bg-teal-800 text-white">Subscribe</Button>
             </div>
           </div>
         </div>
@@ -288,16 +300,17 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="py-20 bg-muted/50" id="about">
-        <div className="container mx-auto px-4 sm:px-6">
+      <section
+        className="py-20 bg-muted/50 bg-[url('https://i.ibb.co/4wFLTnh7/front-view-two-stacks-coins-with-jar-plants.jpg')] bg-cover bg-center relative"
+        id="mission"
+      >
+        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-8">About MoyoTools</h2>
-            <p className="text-base sm:text-lg text-muted-foreground mb-6">
-              MoyoTools is your all-in-one business management solution, designed to help organizations streamline their operations and drive growth. Our integrated suite of tools combines CRM, sales, and accounting functionalities to provide a seamless experience for businesses of all sizes.
-            </p>
-            <p className="text-base sm:text-lg text-muted-foreground">
-              With years of experience in business software development, we understand the challenges modern businesses face and provide solutions that make a difference.
-            </p>
+        <h2 className="text-4xl font-bold mb-8 text-white">Mission Statement</h2>
+        <p className="text-lg text-white/90 mb-6">
+        MoyoTools empowers businesses with an all-in-one platform for CRM, sales, and accounting—helping teams work smarter, build stronger customer relationships, and drive growth with ease.
+        </p>
           </div>
         </div>
       </section>
@@ -315,12 +328,12 @@ export default function Home() {
             <div className="text-center">
               <Phone className="w-8 h-8 mx-auto mb-4 text-primary" />
               <h3 className="text-xl font-semibold mb-2">Phone</h3>
-              <p className="text-muted-foreground">+1 (555) 123-4567</p>
+              <p className="text-muted-foreground">+263 772 724 514</p>
             </div>
             <div className="text-center">
               <MapPin className="w-8 h-8 mx-auto mb-4 text-primary" />
               <h3 className="text-xl font-semibold mb-2">Address</h3>
-              <p className="text-muted-foreground">123 Business Ave, Suite 100<br />New York, NY 10001</p>
+              <p className="text-muted-foreground">5031 Crowhill Veiws<br/>Harare</p>
             </div>
           </div>
         </div>

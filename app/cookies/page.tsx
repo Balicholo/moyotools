@@ -1,6 +1,6 @@
 export default function CookiesPolicy() {
   return (
-    <div className="min-h-screen bg-background py-12">
+    <div className="min-h-screen bg-background py-12 pt-24">
       <div className="container mx-auto px-6 max-w-4xl">
         <h1 className="text-4xl font-bold mb-8">Cookies Policy</h1>
         <div className="prose prose-lg">
